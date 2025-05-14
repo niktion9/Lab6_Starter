@@ -17,7 +17,7 @@ class RecipeCard extends HTMLElement {
 		this.article = document.createElement('article');
 		this.styleElem = document.createElement('style');
 
-		styleElem.textContent = `
+		this.styleElem.textContent = `
 			* {
 				font-family: sans-serif;
 				margin: 0;
