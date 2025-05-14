@@ -76,7 +76,12 @@ function initFormHandler() {
 		const formData = new FormData(form);
 		const recipeObject = {};
 		formData.forEach((value,key)=>{
-			recipeObject[key] = value;
+			if (key === 'rating' || key === 'numRatings'){
+				recipeObject[key] = Number(value);
+			}
+			else{
+				recipeObject[key] = value;
+			}
 		});
 		const recipeCard = document.createElement('recipe-card');
 		recipeCard.data = recipeObject;
