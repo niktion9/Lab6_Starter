@@ -73,9 +73,9 @@ function initFormHandler() {
 	//            submit button is clicked
 	form.addEventListener('submit', (event) => {
 		event.preventDefault();
-		const FormData = new FormData(from);
+		const formData = new FormData(from);
 		const recipeObject = {};
-		formData.forEach((balue,key)=>{
+		formData.forEach((value,key)=>{
 			recipeObject[key] = value;
 		});
 		const recipeCard = document.createElement('recipe-card');
