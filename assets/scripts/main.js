@@ -73,7 +73,7 @@ function initFormHandler() {
 	//            submit button is clicked
 	form.addEventListener('submit', (event) => {
 		event.preventDefault();
-		const formData = new FormData(from);
+		const formData = new FormData(form);
 		const recipeObject = {};
 		formData.forEach((value,key)=>{
 			recipeObject[key] = value;
