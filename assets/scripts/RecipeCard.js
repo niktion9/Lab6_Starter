@@ -95,7 +95,8 @@ class RecipeCard extends HTMLElement {
 			}
 		`;
 
-		this.shadow.appendChild(style);
+		
+		this.shadow.appendChild(this.styleElem);
 		this.shadow.appendChild(this.article);
 	}
 
